@@ -7,3 +7,5 @@ class Solution(object):
                 if i < j and nums[i] + nums[j] < target:
                     num_pairs += 1
         return num_pairs
+
+# not linear time complexity
