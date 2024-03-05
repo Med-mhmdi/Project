@@ -13,3 +13,5 @@ class Solution(object):
                 count += frequency_map[num] * (frequency_map[num] - 1) // 2
 
         return count
+
+# it works but we do not use dictionaries yet. only arrays.
