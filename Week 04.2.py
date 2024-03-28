@@ -4,8 +4,15 @@ class MySet:
 
     def add(self, x):
         if x not in self.elements:
-            self.elements.append(x)
-            self.elements.sort()
+            if len(self.elements) == 0 or x < self.elements[0]:
+                self.elements.insert(0, x)
+            elif x > self.elements[-1]:
+                self.elements.append(x)
+            else:
+                for i in range(len(self.elements) - 1):
+                    if self.elements[i] < x < self.elements[i + 1]:
+                        self.elements.insert(i + 1, x)
+                        break
 
     def remove(self, x):
         if x in self.elements:
