@@ -14,4 +14,4 @@ class MySet:
     def contains(self, x):
         return x in self.elements
 
-# Good job, 3pts are yours
+# you should use that the array is already sorted. please, rewrite a code without using ready operations as "remove" etc. you should go through the array using the loop
